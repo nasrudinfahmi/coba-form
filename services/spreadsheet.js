@@ -8,7 +8,7 @@ async function fetchSpreadsheet(datas) {
     formData.append("Nama", datas.nama);
     formData.append("Nomor Telepon", datas.noHp);
     formData.append("File", datas.fileUrl);
-    formData.append("Preview", datas.fileUrl);
+    formData.append("Preview", datas.fileUrl.split("&token=")[0]);
 
     await fetch(scriptSpreadsheet, { method: "POST", body: formData });
   } catch (error) {
