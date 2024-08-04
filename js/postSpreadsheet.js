@@ -43,8 +43,8 @@ form.addEventListener("submit", async (e) => {
     );
 
     const datas = {
-      nama: nama.value,
-      noHp: nomorHp,
+      nama: nama.value.trim(),
+      noHp: nomorHp.trim(),
       fileUrl,
     };
 
