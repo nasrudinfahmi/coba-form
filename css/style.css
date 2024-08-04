@@ -17,21 +17,20 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(50%, 50%);
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   border-top: 0.5rem solid rgb(231, 231, 231);
   border-right: 0.5rem solid rgb(231, 231, 231);
-  animation: spin 0.5s linear infinite;
+  animation: spin 0.4s linear infinite;
 }
 
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotatez(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotatez(360deg);
   }
 }
 /* LOADING END */
